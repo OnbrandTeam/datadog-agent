@@ -1,0 +1,5 @@
+init_config:
+
+instances:
+  - openmetrics_endpoint: "http://%%env_FLOWER_SERVICE_HOST%%:5555/metrics"
+

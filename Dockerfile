@@ -19,3 +19,6 @@ ARG RENDER_SERVICE_NAME=datadog
 
 ENV DD_BIND_HOST=$RENDER_SERVICE_NAME
 ENV DD_HOSTNAME=$RENDER_SERVICE_NAME
+
+# Add Flower OpenMetrics check
+COPY conf.d/celery.d /etc/datadog-agent/conf.d/celery.d
